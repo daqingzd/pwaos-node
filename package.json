@@ -1,0 +1,34 @@
+{
+  "name": "@pwaos/runtime-node",
+  "version": "0.2.1",
+  "description": "Node.js bindings for the pwaOS Runtime Client API — run and manage PWAs from Node.js.",
+  "gypfile": true,
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "build": "node-gyp rebuild",
+    "rebuild": "node-gyp rebuild",
+    "clean": "node-gyp clean",
+    "test": "node test/index.js"
+  },
+  "keywords": [
+    "pwaos",
+    "pwa",
+    "runtime",
+    "native",
+    "addon"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^8.0.0",
+    "7zip-bin": "^5.2.0"
+  },
+  "files": [
+    "build/Release/pwaos_runtime.node",
+    "third_party/pwaos_sdk/",
+    "src/",
+    "scripts/setup-sdk.js",
+    "binding.gyp",
+    "index.js",
+    "test"
+  ]
+}
